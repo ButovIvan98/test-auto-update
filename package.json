@@ -1,6 +1,6 @@
 {
-  "name": "electron-auto-update-example",
-  "version": "1.0.3",
+  "name": "evo",
+  "version": "1.0.17",
   "description": "",
   "main": "main.js",
   "repository": {
@@ -11,18 +11,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "build": "electron-builder build --mac --win --publish never",
-    "deploy": "electron-builder -mwl always"
+    "deploy": "electron-builder build --mac --win --publish always"
   },
-  "author": "",
+  "author": "Ivan Butov",
   "license": "ISC",
   "devDependencies": {
     "electron": "^19.0.7",
     "electron-builder": "^23.1.0"
   },
   "dependencies": {
-    "electron-updater": "^4.0.6",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1"
+    "electron-updater": "^5.3.0"
   }
 }

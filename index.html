@@ -26,7 +26,7 @@
   </style>
 </head>
 <body>
-  <h1>Electron Auto Update Example new version updater</h1>
+  <h1>или попозже пойдем?!</h1>
   <p id="version">Version</p>
   <div id="root"></div>
   <div id="notification" class="hidden">
@@ -42,7 +42,6 @@
     const notification = document.getElementById("notification");
     const message = document.getElementById("message");
     const restartButton = document.getElementById("restart-button");
-    alert(arg.version);
     ipcRenderer.send("app_version");
     ipcRenderer.on("app_version", (event, arg) => {
       ipcRenderer.removeAllListeners("app_version");
